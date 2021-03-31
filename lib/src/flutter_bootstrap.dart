@@ -184,7 +184,7 @@ class BootstrapRow extends StatelessWidget {
   BootstrapRow({
     required this.children,
     this.decoration,
-    required this.height,
+    this.height = 0,
   });
 
   ///
