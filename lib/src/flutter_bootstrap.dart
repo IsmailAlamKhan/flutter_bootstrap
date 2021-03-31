@@ -184,13 +184,13 @@ class BootstrapRow extends StatelessWidget {
   BootstrapRow({
     required this.children,
     this.decoration,
-    this.height,
+    required this.height,
   });
 
   ///
   /// Min container height
   ///
-  final double? height;
+  final double height;
 
   ///
   /// Any potential BoxDecoration
@@ -221,7 +221,7 @@ class BootstrapRow extends StatelessWidget {
           constraints: BoxConstraints(
             minWidth: constraints.maxWidth,
             maxWidth: constraints.maxWidth,
-            minHeight: height!,
+            minHeight: height,
           ),
           decoration: decoration,
           child: Wrap(
